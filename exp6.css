@@ -1,0 +1,32 @@
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: rgb(192, 238, 222);
+    height: 50vh;
+    align-items: center;
+
+}
+.container2{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+    background-color:rgb(213, 187, 236);
+    height: 50vh;
+    align-items: center;
+
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: 2px solid black;
+}
+.box2{
+    height: 100px;
+    width: 100px;
+    background-color:red;
+    border: 2px solid black;
+}

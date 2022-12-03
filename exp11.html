@@ -1,0 +1,47 @@
+Name:J.RadhaRashmitha
+Regdno:21b01a1263
+
+<!--exp11-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="exp11.js">
+        function validation(){
+            if(name.value.length<6 || name.value.length>30)
+                {
+                    alert('name length should be more than 6 and less than 30')
+                }
+                if(!password.value.match(/^.{5,15}$/)){
+                    alert('password length must be between 5-15 characters')
+                }
+                if(!phoneNumber.value.match(/^[1-9][0-9]{9}$/)){
+                    alert('phonw number must be 10 characters')
+                }
+        }
+    </script>
+</head>
+<body>
+    <br><br>
+    username:<input type="text"placeholder="enter your name" id="name"><br><br>
+    Email:<input type="text" placeholder="email" id="email"><br><br>
+    Password:<input type="password" placeholder="password"name="" id="password"><br><br>
+    Phonenumber:<input type="text" placeholder="enter your number" name="" id="phoneNumber"><br><br>
+    Gender: &nbsp;
+    Male:<input type="radio" name="gender" value="male">
+    Female:<input type="radio" name="gender" value="female"><br><br>
+    Language:&nbsp;
+    <select name="language" id="language">
+        <option value="">select language</option>
+        <option value="English">English</option>
+        <option value="Telugu">Telugu</option>
+        <option value="Hindi">Hindi</option>
+        <option value="Tamil">Tamil</option>
+    </select>
+    <br><br>
+    <input type="button" value="submit" onclick="validation()">
+</body>
+</html>
